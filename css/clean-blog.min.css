@@ -1,0 +1,133 @@
+    img {
+    max-width: 50vmax;
+    max-height: auto;
+}
+
+#pbites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#homeimg {
+    displaY: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 50vmax;
+    max-height: auto;
+    /*flex: 1 1 150px;(first number is grow, second is shrink, last number is basis aka starting size)*/
+    /*order: (items usually go in order of HTML, use this to switch it up. ie img 2nd and para 1st)*/
+}
+
+.snippet {
+    display: flex;
+}
+
+#homeimg {
+    float: left;
+}
+
+.homepara {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    max-height: auto;
+    max-width: 50vmax;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.homepara p {}
+
+#whatisgluten {
+    display: block;
+    padding: 20px;
+    background-image: url('img/gluten.jpg');
+}
+
+.postimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Small devices (landscape phones, 576px and down)*/
+
+@media (max-width: 376px) {
+    .site-heading {
+        background: url(../img/ResponsiveGF.png) no-repeat;
+        max-width: : 100;
+        max-height: auto;
+        object-fit: contain;
+    }
+    #pbites {
+        display: inline-block;
+    }
+    #homeimg {
+        /*float:left;
+       alignment :right;
+       margin:auto;
+       display:inline-block
+       width: 75%;
+       height: 75%;*/
+        displaY: inline-block;
+        max-width: 50vmax;
+        max-height: auto;
+    }
+    .homepara {
+        /*display:inline-block;
+       float: right;
+       position:absolute;
+       right:320px;
+       word-wrap: normal;*/
+        display: inline-block;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 377px) {
+    .site-heading {
+        background: url(../img/Stilleatin.png) no-repeat;
+        max-width: : 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    #pbites {
+        display: inline-block;
+    }
+    #homeimg {
+        /*float:left;
+   alignment :right;
+   margin:auto;
+   display:inline-block
+   width: 75%;
+   height: 75%;*/
+        displaY: inline-block;
+        max-width: 50vmax;
+        max-height: auto;
+    }
+    .homepara {
+        /*display:inline-block;
+   float: right;
+   position:absolute;
+   right:320px;
+   word-wrap: normal;*/
+        display: inline-block;
+    }
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 720px) {
+        .site-heading {
+            background: url(../img/GFBG.png);
+            max-width: auto;
+            object-fit: contain;
+        }
+    }
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        ...
+    }
