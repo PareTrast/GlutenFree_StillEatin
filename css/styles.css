@@ -1,0 +1,138 @@
+:root {
+    --main-text-color: wheat;
+    --main-child-bg-color: rgba(0, 0, 0, .5);
+    --icon-color: wheat;
+    --icon-text-align: center;
+    --icon-size: 39px;
+    --icon-font-size: 16px;
+    --icon-margin: auto;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    border: 5px wheat ridge;
+}
+
+.footer {
+    color: wheat;
+    font-size: 25px;
+    text-align: center;
+}
+
+#hi {
+    border-radius: 50%;
+    padding: 0;
+}
+
+.navbar {
+    background: url();
+    overflow: hidden;
+    width: 100%;
+    color: wheat;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    color: wheat;
+}
+
+.navbar a {
+    color: wheat;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: wheat;
+    padding: 50px 0 25px 0;
+}
+
+.opening {
+    color: wheat;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.snippets {
+    display: flex;
+    margin: 10px auto;
+    width: 1000px;
+    height: auto;
+    border: 5px wheat ridge;
+}
+
+img {
+    object-fit: cover;
+    align-self: flex-start;
+    width: 60%;
+    height: auto;
+}
+
+.right {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+#snip {
+    font-size: 24px;
+    color: wheat;
+    height: auto;
+}
+
+#header {
+    color: wheat;
+    font-size: 36px;
+    text-decoration: underline wheat;
+}
+
+button {
+    background: black;
+    border: 2px ridge wheat;
+}
+
+.icon-container {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-container>a {}
+
+.fa {
+    color: var(--icon-color);
+    font-size: var(--icon-size);
+    text-align: var(--icon-text-align);
+}
+
+.fa>p {
+    font-size: var(--icon-font-size);
+    padding: 5px;
+}
+
+.more {
+    color: wheat;
+    background: black;
+}
+
+ol {
+    color: var(--main-text-color)
+}
+
+ol>li {
+    color: var(--main-text-color);
+    font-size: 24px;
+}
+
+@media (max-width:719px) {
+    .snippets {
+        display: inline;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+}
